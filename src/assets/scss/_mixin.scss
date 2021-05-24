@@ -1,0 +1,45 @@
+
+// Box Shadow
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {     
+    box-shadow: $x-axis $y-axis $blur $color;
+    -webkit-box-shadow: $x-axis $y-axis $blur $color;
+    -moz-shadow: $x-axis $y-axis $blur $color;    
+    -o-shadow: $x-axis $y-axis $blur $color; 
+  }
+  
+  .box-shadow {
+    // @include box-shadow($base-size*0, $base-size*2, $base-size*3, $shadow-color);  // Btn Shadow color
+
+    // @include box-shadow($base-size*2, $base-size*2, $base-size*20, $card-shadow);   // Card Shadow
+
+    // @include box-shadow($base-size*0, $base-size*8, $base-size*35, $top-shadow);   //Top bar Shadow
+
+    // @include box-shadow($base-size*0, $base-size*2, $base-size*3, $footer-shadow);   //Footer Shadow
+
+    // @include box-shadow($base-size*2, $base-size*2, $base-size*3, $footer-shadow);   //Left Nav List Shawow
+  }
+
+//  
+  // Border Radius
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+  }
+
+// .border-radius{
+//    @include  border-radius($base-size*8);    // 16 Pixels
+
+//    @include  border-radius($base-size*4);    // 8 Pixels
+
+//    @include  border-radius($base-size*2);    // 4 Pixels 
+// }
+ 
+
+//------------------------------------------------
+//       Gradient Header
+// ------------------------------------------------// 
+
+
+
