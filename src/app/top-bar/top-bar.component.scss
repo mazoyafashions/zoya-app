@@ -1,0 +1,272 @@
+@import "/src/assets/scss/import";
+
+.top-bar {
+    background: $secondary;
+    height: $base-size * 52;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    padding: 0 15px;
+    z-index: 1;
+
+    .my-account {
+        position: relative;
+
+        button {
+            background: $white;
+            width: $base-size * 100;
+            line-height: $base-size * 15.5;
+        }
+        ul {
+            width: $base-size * 100;
+            position: absolute;
+            right: 0;
+
+            li {
+                background: $white;
+                text-align: center;
+                line-height: $base-size * 15;
+                box-shadow: 0px 1px 2px 1px #ccc;
+                cursor: pointer;
+            }
+        }
+    }
+    .edit-addres {
+        background: $primary;
+        width: 100%;
+        height: 27px;
+        position: fixed;
+        left: 0;
+
+        .cart-address {
+            position: relative;
+
+            h6 {
+                font-size: $base-size * 5;
+                color: $white;
+                line-height: $base-size * 14;
+                padding-left: $base-size * 6;
+
+                i {
+                    padding: 5px;
+                }
+            }
+        }
+
+        .item:hover .item-overlay.top {
+            top: 10%;
+        }
+
+        .item-overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: $white;
+            overflow: hidden;
+            text-align: center;
+            width: 100%;
+            height: 58%;
+            transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+            box-shadow: 0 0 8px 2px #cccccc;
+
+            .overlay-inner {
+                width: 97.5%;
+                height: 92%;
+                margin: 15px 15px;
+                text-align: left;
+
+                h3 {
+                    font-weight: 500;
+                    color: $black !important;
+                }
+                p {
+                    padding-bottom: 15px;
+                }
+
+                .slider {
+                    width: 100%;
+                    text-align: center;
+                    overflow: hidden;
+
+                    .slides {
+                        display: flex;
+                        overflow-x: auto;
+                        scroll-snap-type: x mandatory;
+                        scroll-behavior: smooth;
+                        -webkit-overflow-scrolling: touch;
+
+                        .location {
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            height: 100%;
+                            h3 {
+                                color: $black !important;
+                            }
+                        }
+                    }
+                    .slides::-webkit-scrollbar {
+                        width: 10px;
+                        height: 10px;
+                    }
+                    .slides::-webkit-scrollbar-thumb {
+                        background: transparent;
+                        border-radius: 10px;
+                    }
+                    .slides::-webkit-scrollbar-track {
+                        background: transparent;
+                    }
+                    .slides > div {
+                        scroll-snap-align: start;
+                        flex-shrink: 0;
+                        width: 140px;
+                        height: 110px;
+                        margin-right: 15px;
+                        border-radius: 5px;
+                        border: 1px solid $border-color;
+                        transform-origin: center center;
+                        transform: scale(1);
+                        transition: transform 0.5s;
+                        position: relative;
+                        z-index: -1;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 100px;
+                    }
+                }
+
+                .pincode {
+
+                    button{
+                        width: 100%;
+                        height: $base-size*15;
+                        color: $location-color;
+                        font-size: $base-size*6!important;
+                        text-align: left;
+                        display: block;
+                        i{
+                            padding-right: $base-size*4;
+                        }
+                    }
+                }
+            }
+        }
+
+        .item-overlay.top {
+            top: 100%;
+        }
+        .item-overlay.bottom {
+            bottom: 100%;
+        }
+    }
+}
+
+.tag-log {
+    display: flex;
+    line-height: $base-size * 25;
+
+    p {
+        font-size: $base-size * 7;
+        font-weight: 500;
+        padding-left: $base-size * 44;
+        line-height: inherit;
+    }
+    button {
+        width: $base-size * 20;
+
+        i {
+            font-size: $base-size * 9;
+        }
+    }
+}
+
+.search-bar {
+    position: relative;
+
+    ::placeholder {
+        padding-left: 20px;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: $base-size * 7;
+        top: $base-size * 9;
+    }
+    .type-list {
+        background: $white;
+        width: 100%;
+        min-height: $base-size * 20.5;
+        max-height: $base-size * 150;
+        border-radius: $base-size * 1;
+        overflow: auto;
+        position: absolute;
+        top: $base-size * 21;
+        z-index: 1;
+
+        li {
+            padding: $base-size * 5 $base-size * 5;
+            border-bottom: 1px solid $border-color;
+        }
+    }
+    .overlay-typ-list {
+        width: 100%;
+        height: 100%;
+        background: $black;
+        opacity: 0.3;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+}
+
+.fixed-header {
+    position: fixed;
+    z-index: 999;
+    height: 50px;
+}
+
+#frugalmap {
+    height: 300px;
+    width: 100%;
+    top: 50px;
+    position: relative;
+    background: #2ab4c0;
+}
+
+.mat-elevation-z5 {
+    position: relative;
+}
+
+.sticky {
+    position: fixed;
+    top: 50px;
+}
+
+/*/////////////////////////////////
+  Responsive  MEDIAQUERIES CSS
+/////////////////////////////////*/
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 297px) and (max-width: 768.98px) {
+    .tag-log {
+        p {
+            padding-left: $base-size * 22 !important;
+        }
+    }
+
+    .item:hover .item-overlay.top {
+        top: 50% !important;
+    }
+    .overlay-inner {
+        width: 92% !important;
+        height: 70% !important;
+    }
+    .slider {
+        width: 345px!important;
+    }
+}

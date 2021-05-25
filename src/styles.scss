@@ -2,6 +2,7 @@
 @import "./assets/scss/import.scss";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 /*-------------------------------------------------------------------------------------------
   CSS definations for 
@@ -910,3 +911,6 @@ p {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

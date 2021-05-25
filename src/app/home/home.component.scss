@@ -1,0 +1,31 @@
+@import "/src/assets/scss/import";
+
+.banner_section {
+    margin-top: $base-size * 5;
+    margin-bottom: $base-size * 20;
+
+    .new-arrivals {
+        .new-arrival-had {
+            text-align: center;
+            padding: $base-size * 20 0 $base-size * 10 0;
+        }
+    }
+
+    .free-shipping {
+        margin-top: $base-size*5;
+        border: 1px solid $border-color;
+        .ship-car {
+            i{
+                font-size: $base-size*20;
+                padding: $base-size*5 $base-size*15;
+                color: $disabled;
+            }
+        }
+        .ship-text {
+            h3 {
+                color: $black!important;
+                font-weight: $font-weight-regular;
+            }
+        }
+    }
+}
