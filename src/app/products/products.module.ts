@@ -10,11 +10,11 @@ const routes: Routes = [
   //   redirectTo: 'product',
   //   pathMatch: 'full'
   // },
-  // {
-  //   path: '',
-  //   component:ProductListComponent
+  {
+    path: '',
+    component:ProductsListComponent
 
-  // },
+  },
   // {
   //   path: 'product-details',
   //   component: ProductDetailsComponent

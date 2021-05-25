@@ -12,4 +12,6 @@ export class SideBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  opened = false;
+
 }
