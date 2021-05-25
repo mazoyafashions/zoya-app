@@ -1,0 +1,129 @@
+/*left side bar toggle*/
+.side-bar {
+
+	.message {
+		background:$white;
+		color:$white;
+		position: fixed;
+		top: 30px;
+		left: $base-size*-162;
+		width: $base-size*140;
+		height: 100%;
+		transition: left 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+		overflow: hidden;
+		box-sizing: border-box;
+		z-index: 10;	
+
+	.slide-logo {
+        position: relative;
+
+        .profile {
+            background:$secondary;
+            height: 60px;
+            color: black;
+            font-size: 40px;
+            padding: $base-size*5 $base-size*7.5;
+            i {
+                color: $border-color;
+            }
+            h4 {
+                display: inline-block;
+                padding-left: $base-size*5;
+                position: relative;
+                top:-8px;
+            }
+
+        }
+
+		}
+	}
+
+	#toggle {
+		position:absolute;
+		appearance:none;
+		cursor:pointer;
+		left:-100%;
+		top:-100%;
+	}
+
+	#toggle + label {
+		width: $base-size*30;
+		position:fixed;
+		left: $base-size*0;
+		top: $base-size*1.5;
+        font-size: $base-size*9;
+		cursor:pointer;
+		padding:$base-size*5;
+		@include  border-radius($base-size*2);
+		padding: 0 $base-size*5;
+		line-height:$base-size*22;
+		text-align:center;
+		-webkit-font-smoothing: antialiased;
+		cursor: pointer;
+		margin:0 0;
+		transition:all 500ms ease;
+        z-index: 10;
+        
+	}
+
+	#toggle:checked ~ .message {
+		left: 0;
+	} 
+
+
+	
+    
+    .side-bar-nav {
+
+        nav {
+
+            .mainmenu {
+
+                button {
+                    width: 100%;
+                    text-align: left;
+                    color: $font-color;
+                    display: block;
+                    padding:0 $base-size*8 0 $base-size*10;
+                    line-height:$base-size*25;
+
+                    &:first-child {
+                        // border-bottom: $base-size*0.1 solid $background-hover;
+                    }
+
+                    img {
+                        float: right;
+                        padding: $base-size*9 0 0 0;
+                    }
+                }
+
+                li:hover .submenu {
+                    display: block;
+                    max-height: $base-size*100;
+                }                
+
+                .submenu {
+                    overflow: hidden;
+                    max-height: 0;
+                    -webkit-transition: all 0.5s ease-out;
+
+                    button {
+                        background: $secondary;
+                        color: $white;
+
+                        &:hover {
+                            background: $background-hover;
+                            color: $white;
+                            line-height: $base-size*20;
+                        }
+
+                        img {
+                            float: left;
+                            padding: $base-size*8 $base-size*8 0 $base-size*5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
