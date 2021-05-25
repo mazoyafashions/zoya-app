@@ -1,0 +1,11 @@
+@import "/src/assets/scss/import";
+
+.about-content {
+    
+    h2 {
+        font-size: $base-size*6!important;
+        line-height: inherit;
+        font-weight: normal;
+        margin-top: $base-size*5;
+    }
+}

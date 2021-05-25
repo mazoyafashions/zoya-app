@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
-// import { ModalContentComponent } from '../modal-content/modal-content.component';
+import { ModalContentComponent } from '../modal-content/modal-content.component';
 
 
 @Component({
@@ -10,17 +10,18 @@ import {MatDialog} from '@angular/material/dialog';
 })
 
 export class TopBarComponent implements OnInit {
+  dialog: any;
 
   constructor
   () {}
 
-  // openDialog() {
-  //   const dialogRef = this.dialog.open(ModalContentComponent);
+  openDialog() {
+    const dialogRef = this.dialog.open(ModalContentComponent);
 
-  //   dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe(result => {
       
-  //   });
-  // }
+    });
+  }
 
 
   isShown: boolean = false; // hidden by default

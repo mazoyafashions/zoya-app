@@ -35,7 +35,11 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalContentComponent } from './modal-content/modal-content.component';
+import { GoogleMapComponent } from './google-map/google-map.component';
+import { ConstantAreaComponent } from './constant-area/constant-area.component'; 
+// import { ProductsModule} from './products/products.module';
 
 
 @NgModule({
@@ -43,7 +47,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     SideBarComponent,
     TopBarComponent,
-    HomeComponent
+    HomeComponent,
+    ModalContentComponent,
+    GoogleMapComponent,
+    ConstantAreaComponent
     
   ],
   imports: [
@@ -84,4 +91,4 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule  { }

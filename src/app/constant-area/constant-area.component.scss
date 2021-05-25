@@ -1,0 +1,86 @@
+@import "/src/assets/scss/import";
+
+.banner_section {
+    margin-top: $base-size * 5;
+    margin-bottom: $base-size * 20;
+
+    .new-arrivals {
+        .new-arrival-had {
+            text-align: center;
+            padding: $base-size * 20 0 $base-size * 10 0;
+        }
+    }
+
+    .single_banner {
+        position: relative;
+        .offer {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: $danger;
+            p{
+                color: $white;
+                text-align: center;
+                line-height: $base-size*7.5;
+                padding-top: $base-size*3.5;
+            }
+        }
+    }
+
+    .featured {
+        .featured-had {
+            padding: $base-size * 20 0 $base-size * 0 0;
+        }
+        .product_name {
+            h3 {
+                line-height: $base-size * 8;
+            }
+        }
+        .product_price {
+            .current_price {
+                font-size: $base-size * 7;
+                font-weight: 600;
+            }
+            .old_price {
+                font-size: $base-size * 7;
+                font-weight: 500;
+                color: $disabled;
+                text-decoration: line-through;
+                padding-left: $base-size * 5;
+            }
+        }
+        .star {
+            i {
+                color: $danger;
+            }
+        }
+        .add-like {
+            display: inline-block;
+            border: 1px solid $border-color;
+            border-radius: $base-size*2;
+            margin: $base-size*5 0;
+            i {
+                padding: $base-size*3;
+            }
+        }
+    }
+
+    .free-shipping {
+        margin-top: $base-size*5;
+        border: 1px solid $border-color;
+        .ship-car {
+            i{
+                font-size: $base-size*20;
+                padding: $base-size*5 $base-size*15;
+                color: $disabled;
+            }
+        }
+        .ship-text {
+            h3 {
+                color: $black!important;
+                font-weight: $font-weight-regular;
+            }
+        }
+    }
+}
