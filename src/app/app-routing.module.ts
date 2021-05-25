@@ -12,6 +12,11 @@ const routes: Routes = [
 
   },
   {
+    path: 'zoya-app',
+    component:HomeComponent
+
+  },
+  {
     path: 'home',
     component:HomeComponent
 
