@@ -1,1 +1,71 @@
-<p>side-bar works!</p>
+<!-- =================================================================
+  Start  Angular Sidebar Nav
+================================================================= -->
+<div class="side-nav-bar left-sidebar side-bar">
+    <mat-sidenav-container>
+        <mat-sidenav [(opened)]="opened">
+            <div class="slide-logo">
+                <div class="text-center m-t-10 m-b-10"  routerLink="home">
+                    <img src="../assets/images/logo.svg" width="125" alt="M A Zoya Logo">
+                </div>
+                <div class="profile">
+                    <i class="fas fa-user-circle"></i>
+                    <h4>Hello, Mohd</h4>
+                </div>
+            </div>
+            <div class="side-bar-nav">
+                <nav id="nav">
+                    <ul class="mainmenu m-t-0 clearfix">
+                        <li>
+                            <button routerLink="home"><span>Home</span>
+                                <img src="../assets/images/profile_arrow.svg" width="10"
+                                    alt="profile Arrow">
+                            </button>
+                        </li>
+                    </ul>
+
+                    <ul class="mainmenu clearfix">
+                        <li>
+                            <button routerLink="about"><span>About Us</span>
+                                <img src="../assets/images/profile_arrow.svg" width="10" alt="Menu">
+                            </button>
+                        </li>
+                    </ul>
+
+                    <ul class="mainmenu clearfix">
+                        <li>
+                            <button routerLink="/"><span>Products</span>
+                                <img src="../assets/images/profile_arrow.svg" width="10" alt="Menu">
+                            </button>
+                            <ul class="submenu">
+                                <li>
+                                    <button routerLink="product">
+                                        <img src="../assets/images/user.svg" alt="Rate Card">Hair
+                                        Clips</button>
+                                </li>
+                                <li>
+                                    <button><img src="../assets/images/channel.svg"
+                                            alt="Packages">Mug</button>
+                                </li>
+                                <li>
+                                    <button><img src="../assets/images/combos.svg" alt="Combos">Hair
+                                        Bands</button>
+                                </li>
+                                <li>
+                                    <button><img src="../assets/images/user.svg"
+                                            alt="Schemes">Racks</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <button class="nav-icon" (click)="opened=!opened"><i class="fas fa-bars"></i></button>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
+<!-- =================================================================
+  End  Angular Sidebar Nav
+================================================================= -->

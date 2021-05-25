@@ -1,18 +1,13 @@
 <div class="top-bar">
-    <!-- <app-side-bar></app-side-bar> -->
+    <app-side-bar></app-side-bar>
     <div class="row">
         <div class="col-md-12">
             <div class="tag-log">
-                <div class="flex-1">
-                    <p>M A Zoya Fashions</p>
-                </div>
-                <div class="flex-1">
+                <div class="flex-1" routerLink="home">
                     <p>M A Zoya Fashions</p>
                 </div>
                 <div class="flex-1 text-right">
-                    <!-- <button routerLink="add-to-cart"><i class="fal fa-cart-plus"></i></button> -->
-                    <button ><i class="fal fa-cart-plus"></i></button>
-
+                    <button routerLink="add-to-cart"><i class="fal fa-cart-plus"></i></button>
                 </div>
             </div>
             <!-- Start Search bar -->
@@ -81,13 +76,11 @@
                     </div>
 
                     <div class="pincode m-t-10">
-                        <!-- <button (click)="openDialog()">
-                            <i class="fal fa-map-marker-alt"></i>Enter an Indian Pincode</button> -->
-                            <button >
-                                <i class="fal fa-map-marker-alt"></i>Enter an Indian Pincode</button>
-                        <!-- <button class="m-t-15" routerLink="google-map">
+                        <button (click)="openDialog()">
+                            <i class="fal fa-map-marker-alt"></i>Enter an Indian Pincode</button>
+                        <button class="m-t-15" routerLink="google-map">
                             <i class="far fa-location"></i>Use my current location
-                        </button> -->
+                        </button>
                     </div>
                 </div>
             </div>

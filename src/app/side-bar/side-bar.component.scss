@@ -1,0 +1,127 @@
+@import "/src/assets/scss/import";
+
+.side-nav-bar {
+	.mat-sidenav-container {
+		width: 280px;
+		height: 100%;
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		// z-index: 2;
+
+		.mat-sidenav,
+		.mat-sidenav-content {
+			padding: 0px;
+
+			.nav-icon {
+				background: #ffffff;
+				width: $base-size * 20;
+				height: $base-size * 20;
+				border-radius: 50%;
+				position: fixed;
+				top: 6px;
+				left: 20px;
+
+				i {
+					font-size: $base-size * 10;
+				}
+			}
+		}
+		.mat-sidenav {
+			background: #ffffff;
+			width: 205px;
+			position: fixed;
+			left: 0;
+		}
+	}
+
+	.slide-logo {
+		position: relative;
+
+		.profile {
+			background: $secondary;
+			height: 60px;
+			color: black;
+			font-size: 40px;
+			padding: $base-size * 5 $base-size * 7.5;
+			i {
+				color: $border-color;
+			}
+			h4 {
+				display: inline-block;
+				padding-left: $base-size * 5;
+				position: relative;
+				top: -8px;
+			}
+		}
+	}
+
+	.side-bar-nav {
+		nav {
+			.mainmenu {
+				button {
+					width: 100%;
+					text-align: left;
+					color: $font-color;
+					display: block;
+					padding: 0 $base-size * 8 0 $base-size * 10;
+					line-height: $base-size * 25;
+
+					&:first-child {
+						// border-bottom: $base-size*0.1 solid $background-hover;
+					}
+
+					img {
+						float: right;
+						padding: $base-size * 9 0 0 0;
+					}
+				}
+
+				li:hover .submenu {
+					display: block;
+					max-height: $base-size * 100;
+				}
+
+				.submenu {
+					overflow: hidden;
+					max-height: 0;
+					-webkit-transition: all 0.5s ease-out;
+
+					button {
+						background: $secondary;
+						color: $white;
+
+						&:hover {
+							background: $background-hover;
+							color: $white;
+							line-height: $base-size * 20;
+						}
+
+						img {
+							float: left;
+							padding: $base-size * 8 $base-size * 8 0 $base-size * 5;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*/////////////////////////////////
+  Responsive  MEDIAQUERIES CSS
+/////////////////////////////////*/
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 297px) and (max-width: 768.98px) {
+	.nav-icon {
+		margin: $base-size * 5 $base-size * 5 !important;
+	}
+	.nav-icon {
+		top: -3px!important;
+		left: 5px!important;
+		background: transparent!important;
+		i{
+			color: $white!important;
+		}
+	}
+}
