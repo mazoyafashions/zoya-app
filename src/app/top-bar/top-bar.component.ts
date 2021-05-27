@@ -10,10 +10,9 @@ import { ModalContentComponent } from '../modal-content/modal-content.component'
 })
 
 export class TopBarComponent implements OnInit {
-  dialog: any;
+  
 
-  constructor
-  () {}
+  constructor(public dialog: MatDialog) {}
 
   openDialog() {
     const dialogRef = this.dialog.open(ModalContentComponent);

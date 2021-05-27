@@ -4,6 +4,10 @@ import {HomeComponent} from './home/home.component';
 
 import {AboutComponent} from './about/about.component';
 import { AddToCartComponent } from './products/add-to-cart/add-to-cart.component';
+import {GoogleMapComponent} from './google-map/google-map.component';
+
+
+
 const routes: Routes = [
   {
     path: '',
@@ -41,11 +45,11 @@ const routes: Routes = [
     component:AddToCartComponent
 
   },
-  // {
-  //   path: 'google-map',
-  //   // component:GoogleMapComponent
+  {
+    path: 'google-map',
+    component:GoogleMapComponent
 
-  // },
+  },
 ];
 
 @NgModule({

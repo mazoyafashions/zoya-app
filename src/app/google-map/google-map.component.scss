@@ -1,0 +1,26 @@
+agm-map {
+    height: 80vh;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*/////////////////////////////////
+  Responsive  MEDIAQUERIES CSS
+/////////////////////////////////*/
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 297px) and (max-width: 768.98px) {
+    agm-map {
+        height: 250px!important;
+      }
+}
