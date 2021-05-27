@@ -5,6 +5,7 @@ import { Router, RouterModule, Routes } from '@angular/router';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 // import { CarouselComponent } from './carousel/carousel.component';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 const routes: Routes = [
@@ -26,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ProductsListComponent, ProductDetailsComponent, AddToCartComponent],
+  declarations: [ProductsListComponent, ProductDetailsComponent, AddToCartComponent, CarouselComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
