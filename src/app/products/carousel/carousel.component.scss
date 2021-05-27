@@ -10,7 +10,6 @@
   
   .slides {
     display: flex;
-
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -41,15 +40,13 @@
     transition: transform 0.5s;
     position: relative;
     z-index: -1;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 100px;
   }
-  .slides > div:target {
-  /*   transform: scale(0.8); */
-  }
+
+
   .author-info {
     background: rgba(0, 0, 0, 0.75);
     color: white;
