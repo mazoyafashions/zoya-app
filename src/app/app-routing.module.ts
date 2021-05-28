@@ -5,14 +5,20 @@ import {HomeComponent} from './home/home.component';
 import {AboutComponent} from './about/about.component';
 import { AddToCartComponent } from './products/add-to-cart/add-to-cart.component';
 import {GoogleMapComponent} from './google-map/google-map.component';
+import { LoginComponent} from './login/login.component';
 
 
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo:'home',
+    redirectTo:'login',
     pathMatch:'full'
+
+  },
+  {
+    path: 'login',
+    component:LoginComponent
 
   },
   {

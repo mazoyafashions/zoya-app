@@ -38,7 +38,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalContentComponent } from './modal-content/modal-content.component';
 import { GoogleMapComponent } from './google-map/google-map.component';
-import { ConstantAreaComponent } from './constant-area/constant-area.component'; 
+import { ConstantAreaComponent } from './constant-area/constant-area.component';
+import { LoginComponent } from './login/login.component'; 
 // import { ProductsModule} from './products/products.module';
 
 
@@ -50,7 +51,8 @@ import { ConstantAreaComponent } from './constant-area/constant-area.component';
     HomeComponent,
     ModalContentComponent,
     GoogleMapComponent,
-    ConstantAreaComponent
+    ConstantAreaComponent,
+    LoginComponent
     
   ],
   imports: [

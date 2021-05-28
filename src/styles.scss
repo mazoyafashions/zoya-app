@@ -208,6 +208,13 @@ button {
 	cursor: pointer;
 }
 
+button:focus {
+	outline: 0;
+}
+.focus-visible-only:focus-visible {
+	outline: 0;
+}
+
 /*-------------------------------------------------------------------------------------------*/
 /* Headding Tag
 /*-------------------------------------------------------------------------------------------*/
@@ -218,6 +225,9 @@ h1 {
 	color: $black;
 	font-weight: $font-weight-semi-bold;
 	margin-bottom: 0 !important;
+}
+.mat-h1, .mat-headline, .mat-typography h1 {
+	font-family: "Libre Franklin", sans-serif!important;
 }
 
 h2 {
@@ -238,7 +248,7 @@ h4 {
 	// (1rem = 16px)
 	font-size: $h4 !important;
 	margin-bottom: 0 !important;
-	$font-weight-semi-bold:700;
+	$font-weight-semi-bold: 700;
 }
 
 h5 {
@@ -326,6 +336,13 @@ p {
 	border-bottom: none;
 }
 
+label {
+	font-size: $base-size*5;
+}
+button {
+	cursor: pointer;
+}
+
 /*///////////////////////////////////
 	Add To Card Btn	
 ///////////////////////////////////*/
@@ -378,7 +395,7 @@ p {
 
 /*///////////////////////////////////////////////////
 				 Right Side Bar
-/*///////////////////////////////////////////////////
+/*/ //////////////////////////////////////////////////
 .right-side-section {
 	display: flex;
 
@@ -396,14 +413,12 @@ p {
 	transition: left 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
-
-
 /*///////////////////////////////////////////////////
 				 Mat field
-/*///////////////////////////////////////////////////
+/*/ //////////////////////////////////////////////////
 
 .mat-drawer-transition .mat-drawer-backdrop {
-	position:fixed!important;
+	position: fixed !important;
 }
 .mat-drawer-container {
 	background: transparent;
@@ -413,21 +428,20 @@ p {
 .mat-dialog-container {
 	background: $white;
 	color: $black;
-}	
-
+}
 
 /*///////////////////////////////////////////////////
 				 Review 5 Star
-/*///////////////////////////////////////////////////
+/*/ //////////////////////////////////////////////////
 .star {
 	i {
-		font-size: $base-size*7;
+		font-size: $base-size * 7;
 		color: $star-col-active;
-		padding: 0 $base-size*1;
+		padding: 0 $base-size * 1;
 	}
-	span{
-		font-size: $base-size*5;
-		padding-left: $base-size*5;
+	span {
+		font-size: $base-size * 5;
+		padding-left: $base-size * 5;
 	}
 }
 
@@ -553,12 +567,12 @@ p {
 	}
 	.prod-add-cart {
 		position: relative;
-	.add-to-cart {
-		width: 50%;
-		position: absolute;
-		bottom: 7px;
-		right: 0px;
-	}
+		.add-to-cart {
+			width: 50%;
+			position: absolute;
+			bottom: 7px;
+			right: 0px;
+		}
 	}
 }
 
@@ -772,95 +786,92 @@ p {
 			font-weight: 500;
 		}
 	}
-	.additional-info{
+	.additional-info {
 		h4 {
-			font-size: $base-size * 6!important;
+			font-size: $base-size * 6 !important;
 			font-weight: 500;
 
-			span{
-				padding-left: $base-size*5;
+			span {
+				padding-left: $base-size * 5;
 				font-weight: normal;
 			}
 		}
 	}
 	.customer-reviews {
-
-		.star{
+		.star {
 			i {
 				color: $star-col-active;
-				padding: 0 $base-size*1;
+				padding: 0 $base-size * 1;
 			}
-			span{
-				font-size: $base-size*6;
-				padding-left: $base-size*5;
+			span {
+				font-size: $base-size * 6;
+				padding-left: $base-size * 5;
 			}
 		}
 
-		h4{
-			font-size: $base-size*7!important;
+		h4 {
+			font-size: $base-size * 7 !important;
 			font-weight: 500;
 		}
 	}
 	.review-list {
-
 		i {
 			color: $gray-mid;
-			font-size: $base-size*15;
-			margin-top: $base-size*5;
+			font-size: $base-size * 15;
+			margin-top: $base-size * 5;
 		}
 		.rev-name {
-			padding-left: $base-size*5;
-			font-size: $base-size*6;
+			padding-left: $base-size * 5;
+			font-size: $base-size * 6;
 			position: relative;
 			top: -7px;
 		}
 		.star {
 			i {
-				font-size: $base-size*7;
+				font-size: $base-size * 7;
 				color: $star-col-active;
-				padding: 0 $base-size*1;
+				padding: 0 $base-size * 1;
 			}
-			span{
-				font-size: $base-size*5;
-				padding-left: $base-size*5;
+			span {
+				font-size: $base-size * 5;
+				padding-left: $base-size * 5;
 				color: $danger;
 			}
 		}
 		.review-title {
-			h4{
-				font-size: $base-size*5!important;
+			h4 {
+				font-size: $base-size * 5 !important;
 			}
-			h6{
-				font-size: $base-size*4!important;
+			h6 {
+				font-size: $base-size * 4 !important;
 				color: $gray-dark;
 			}
-			p{
-				font-size: $base-size*5;
+			p {
+				font-size: $base-size * 5;
 			}
 		}
 	}
 
 	.see-all-review {
-		
 		z-index: 5;
-		button{
-			font-size: $base-size*6;
+		button {
+			font-size: $base-size * 6;
 		}
 		.global-rat {
-			span{
-				font-size: $base-size*5;
+			span {
+				font-size: $base-size * 5;
 				color: $gray-dark;
 			}
 			.five-star {
 				width: 12%;
-				font-size: $base-size*5;
+				font-size: $base-size * 5;
 			}
 			.bar {
 				width: 80%;
 			}
-			.percentage{
+			.percentage {
 				width: 12%;
-				font-size: $base-size*5;
+				font-size: $base-size * 5;
 				text-align: right;
 			}
 		}
@@ -901,7 +912,7 @@ p {
 		margin-right: -15px !important;
 	}
 	.also-like-list {
-		width: 100%!important;
+		width: 100% !important;
 	}
 }
 // Large devices (desktops, 992px and up)
@@ -912,5 +923,11 @@ p {
 @media (min-width: 1200px) {
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
