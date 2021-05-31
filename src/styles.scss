@@ -226,8 +226,10 @@ h1 {
 	font-weight: $font-weight-semi-bold;
 	margin-bottom: 0 !important;
 }
-.mat-h1, .mat-headline, .mat-typography h1 {
-	font-family: "Libre Franklin", sans-serif!important;
+.mat-h1,
+.mat-headline,
+.mat-typography h1 {
+	font-family: "Libre Franklin", sans-serif !important;
 }
 
 h2 {
@@ -337,7 +339,7 @@ p {
 }
 
 label {
-	font-size: $base-size*5;
+	font-size: $base-size * 5;
 }
 button {
 	cursor: pointer;
@@ -411,6 +413,41 @@ button {
 	width: 100%;
 	display: block;
 	transition: left 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+/*///////////////////////////////////
+	Add To Card Btn	
+///////////////////////////////////*/
+.mat-dialog-container {
+	min-width: 300px !important;
+	padding: $base-size * 7.5 !important;
+	overflow: hidden !important;
+}
+.modal-had {
+	position: relative;
+	h3 {
+		font-size: $base-size * 6 !important;
+	}
+
+	button {
+		position: absolute;
+		right: $base-size *-7;
+		top: $base-size *-4;
+		width: $base-size*20;
+		height: $base-size*15;
+		line-height: $base-size*5;
+
+		i {
+			font-size: $base-size * 6;
+			font-weight: 100;
+		}
+	}
+}
+.modal-content {
+	.form-control {
+		border: none !important;
+		height: 30px !important;
+	}
 }
 
 /*///////////////////////////////////////////////////
