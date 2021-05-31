@@ -41,6 +41,7 @@ import { GoogleMapComponent } from './google-map/google-map.component';
 import { ConstantAreaComponent } from './constant-area/constant-area.component';
 import { LoginComponent } from './login/login.component'; 
 // import { ProductsModule} from './products/products.module';
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -87,7 +88,10 @@ import { LoginComponent } from './login/login.component';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCSIFuXPQXel1splGkx5ElXoU1bL60Jn-I'
+    })
 
   ],
   providers: [],
