@@ -1,0 +1,84 @@
+@import "/src/assets/scss/import";
+
+.add-cart {
+    .sub-total {
+        position: relative;
+
+        h5 {
+            font-size: $base-size * 7;
+            padding: $base-size * 5;
+            span {
+                font-size: $base-size * 8;
+                font-weight: 600;
+            }
+        }
+        button {
+            line-height: 35px;
+            border: none;
+        }
+    }
+    .add-cart-ditail {
+        display: flex;
+        margin-top: 20px;
+        p{
+            font-size: $base-size* 6;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        h6 {
+            font-size: $base-size * 8;
+            font-weight: 600;
+            padding-top: $base-size* 5;
+        }
+        .in-stoch {
+            h4 {
+                margin-top: $base-size * 0;
+                color: brown;
+            }
+            p {
+                font-weight: 500;
+                span {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    
+    .add-more-item {
+        display: flex;
+        margin-top: $base-size*5;
+
+        .add-delete {
+            text-align: right;
+
+            button{
+                border: 1px solid $gray-mid;
+                padding: $base-size* 2 $base-size*6;
+                border-radius: $base-size*4;
+                font-size: $base-size*5;
+            }
+        }
+        .save-later{
+            text-align: center;
+            button{
+                border: 1px solid $gray-mid;
+                padding: $base-size* 2 $base-size*6;
+                border-radius: $base-size*4;
+                font-size: $base-size*5;
+            }
+        }
+        .input-group-append, .input-group-prepend {
+            display: inline!important;
+        }
+        .form-control {
+            height: $base-size*13.5;
+        }
+        
+        i {
+            font-size: $base-size*7;
+            font-weight: normal;
+        }
+    }
+}

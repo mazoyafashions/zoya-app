@@ -360,6 +360,18 @@ button {
 		background-image: linear-gradient(#f0c457, #f6db98);
 	}
 }
+.add-btn {
+	width: 100%;
+	background-image: linear-gradient(#f0c457, #f0c457);
+	font-size: $base-size * 5;
+	line-height: $base-size * 12.5;
+	border: 1px solid $ad-crt-bod;
+	border-radius: $base-size * 1;
+
+	&:hover {
+		background-image: linear-gradient(#f0c457, #f6db98);
+	}
+}
 .buy-now {
 	width: 100%;
 	background-image: linear-gradient(#f6db98, #f0c457, #d6a834);
