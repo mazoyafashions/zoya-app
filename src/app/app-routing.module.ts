@@ -32,11 +32,11 @@ const routes: Routes = [
 
   },
   
-  {
-    path: 'about',
-    component:AboutComponent
+  // {
+  //   path: 'about',
+  //   component:AboutComponent
 
-  },
+  // },
   {
     path: 'about',
     component:AboutComponent
