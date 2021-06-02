@@ -21,11 +21,11 @@ const routes: Routes = [
     component:LoginComponent
 
   },
-  {
-    path: 'zoya-app',
-    component:HomeComponent
+  // {
+  //   path: 'zoya-app',
+  //   component:HomeComponent
 
-  },
+  // },
   {
     path: 'home',
     component:HomeComponent
