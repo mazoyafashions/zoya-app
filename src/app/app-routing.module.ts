@@ -37,11 +37,11 @@ const routes: Routes = [
     component:AboutComponent
 
   },
-  {
-    path: 'about',
-    component:AboutComponent
+  // {
+  //   path: 'about',
+  //   component:AboutComponent
 
-  },
+  // },
   {
     path: 'products',
     loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
