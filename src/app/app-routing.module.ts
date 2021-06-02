@@ -16,11 +16,11 @@ const routes: Routes = [
     pathMatch:'full'
 
   },
-  {
-    path: 'login',
-    component:LoginComponent
+  // {
+  //   path: 'login',
+  //   component:LoginComponent
 
-  },
+  // },
   // {
   //   path: 'zoya-app',
   //   component:HomeComponent
