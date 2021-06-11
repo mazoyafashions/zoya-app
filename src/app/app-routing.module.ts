@@ -7,6 +7,8 @@ import { AddToCartComponent } from './products/add-to-cart/add-to-cart.component
 import {GoogleMapComponent} from './google-map/google-map.component';
 import { LoginComponent} from './login/login.component';
 import {EchartComponent} from './products/echart/echart.component';
+import { AddAddressComponent } from './products/add-address/add-address.component';
+import { SelectDeliveryAddressComponent } from './products/select-delivery-address/select-delivery-address.component';
 
 
 const routes: Routes = [
@@ -61,6 +63,16 @@ const routes: Routes = [
     component:EchartComponent
 
   },
+  {
+    path: 'add-address',
+    component: AddAddressComponent
+
+  },
+  {
+    path: 'select-address',
+    component: SelectDeliveryAddressComponent
+
+  }
 ];
 
 @NgModule({
