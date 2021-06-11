@@ -85,7 +85,7 @@ export class EchartComponent implements OnInit {
       },
       series: [
           {
-              name: '访问来源',
+              name: 'Sale',
               type: 'pie',
               radius: ['40%', '70%'],
               avoidLabelOverlap: false,
