@@ -42,7 +42,9 @@ import { ConstantAreaComponent } from './constant-area/constant-area.component';
 import { LoginComponent } from './login/login.component'; 
 // import { ProductsModule} from './products/products.module';
 import { AgmCoreModule } from '@agm/core';
+import {enableProdMode} from '@angular/core';
 
+enableProdMode();
 
 @NgModule({
   declarations: [
@@ -90,8 +92,7 @@ import { AgmCoreModule } from '@agm/core';
     MatSortModule,
     MatPaginatorModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCSIFuXPQXel1splGkx5ElXoU1bL60Jn-I'
-    })
+      apiKey: 'AIzaSyCSIFuXPQXel1splGkx5ElXoU1bL60Jn-I'}),
 
   ],
   providers: [],

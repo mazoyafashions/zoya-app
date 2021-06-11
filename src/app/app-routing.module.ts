@@ -6,7 +6,7 @@ import {AboutComponent} from './about/about.component';
 import { AddToCartComponent } from './products/add-to-cart/add-to-cart.component';
 import {GoogleMapComponent} from './google-map/google-map.component';
 import { LoginComponent} from './login/login.component';
-
+import {EchartComponent} from './products/echart/echart.component';
 
 
 const routes: Routes = [
@@ -54,6 +54,11 @@ const routes: Routes = [
   {
     path: 'google-map',
     component:GoogleMapComponent
+
+  },
+  {
+    path: 'echart',
+    component:EchartComponent
 
   },
 ];
