@@ -10,6 +10,7 @@ import {EchartComponent} from './products/echart/echart.component';
 import { AddAddressComponent } from './products/add-address/add-address.component';
 import { SelectDeliveryAddressComponent } from './products/select-delivery-address/select-delivery-address.component';
 import { SelectPaymentComponent } from './products/select-payment/select-payment.component';
+import { CreditDebitAddComponent } from './products/credit-debit-add/credit-debit-add.component';
 
 
 const routes: Routes = [
@@ -77,6 +78,11 @@ const routes: Routes = [
   {
     path: 'select-payment',
     component: SelectPaymentComponent
+
+  },
+  {
+    path: 'credit-debit',
+    component: CreditDebitAddComponent
 
   }
   

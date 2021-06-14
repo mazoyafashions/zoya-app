@@ -1,0 +1,13 @@
+@import "/src/assets/scss/import";
+
+.form-control:focus {
+    box-shadow: 10px 0px 0px 0px #ffffff !important;
+    border-color: #4ca746
+}
+.card {
+    min-height: $base-size*250;
+    button.add-to-cart{
+        line-height: $base-size*18;
+        margin-top: $base-size*5;
+    }
+}

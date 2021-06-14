@@ -1,0 +1,46 @@
+@import "/src/assets/scss/import";
+
+.select-payment {
+    .card {
+        .deliver-address {
+            display: flex;
+            margin: 10px 0;
+            align-items: center;
+            min-height: 26px;
+
+            .redio-btn {
+                width: 20%;
+                text-align: center;
+
+                .form-check-input {
+                    position: inherit;
+                }
+                .form-check {
+                    padding-left: 0;
+                }
+            }
+            .redio-add {
+                width: 80%;
+
+                p {
+                    font-weight: 500;
+                    span{
+                        display: block;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+    .more{
+        padding: $base-size*5 0;
+        h6{
+        font-size: $base-size*4;
+        color: $gray-dark;
+        font-weight: 500;
+        }
+    }
+    button {
+        line-height: $base-size*18;
+    }
+}
