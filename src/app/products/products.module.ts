@@ -9,6 +9,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { EchartComponent } from './echart/echart.component';
 import { AddAddressComponent } from './add-address/add-address.component';
 import { SelectDeliveryAddressComponent } from './select-delivery-address/select-delivery-address.component';
+import { SelectPaymentComponent } from './select-payment/select-payment.component';
 
 
 const routes: Routes = [
@@ -31,7 +32,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ProductsListComponent, ProductDetailsComponent, AddToCartComponent, CarouselComponent, EchartComponent, AddAddressComponent, SelectDeliveryAddressComponent],
+  declarations: [ProductsListComponent, ProductDetailsComponent, AddToCartComponent, CarouselComponent, EchartComponent, AddAddressComponent, SelectDeliveryAddressComponent, SelectPaymentComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)

@@ -384,6 +384,19 @@ button {
 		background-image: linear-gradient(#f0c457, #f6db98);
 	}
 }
+.add-delivery {
+	width: 100%;
+	background: $gray-light;
+	font-size: $base-size * 5;
+	line-height: $base-size * 12.5;
+	border: 1px solid $gray-dark;
+	border-radius: $base-size * 1;
+
+	&:hover {
+		background-image: linear-gradient(#f0c457, #f6db98);
+	}
+}
+
 
 .header {
 	position: relative;

@@ -9,6 +9,7 @@ import { LoginComponent} from './login/login.component';
 import {EchartComponent} from './products/echart/echart.component';
 import { AddAddressComponent } from './products/add-address/add-address.component';
 import { SelectDeliveryAddressComponent } from './products/select-delivery-address/select-delivery-address.component';
+import { SelectPaymentComponent } from './products/select-payment/select-payment.component';
 
 
 const routes: Routes = [
@@ -72,7 +73,13 @@ const routes: Routes = [
     path: 'select-address',
     component: SelectDeliveryAddressComponent
 
+  },
+  {
+    path: 'select-payment',
+    component: SelectPaymentComponent
+
   }
+  
 ];
 
 @NgModule({
